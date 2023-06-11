@@ -1,14 +1,13 @@
-//
-//  Firebase_ConnectionApp.swift
-//  Firebase Connection
-//
-//  Created by Vithushan Logan on 2023-06-10.
-//
-
-import SwiftUI
+ import SwiftUI
+import Firebase
 
 @main
 struct Firebase_ConnectionApp: App {
+    
+    init(){
+        FirebaseApp.configure()
+        print("Firebase config!")
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
